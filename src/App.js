@@ -1,9 +1,23 @@
-import React from 'react'
+import { useState } from "react";
+import Loader from "./globals/elements/loader";
+import ScrollToTop from "./globals/scroll-to-top";
+import RootLayout from "./layouts/root-layout";
 
-const App = () => {
+function App() {
+
+  const [isLoading, setLoading] = useState(true);
+
+  setTimeout(() => {
+    setLoading(false);
+  }, 1000);
+
   return (
-    <div>App</div>
-  )
+    <>
+      {isLoading && <Loader />}
+      <ScrollToTop />
+      <RootLayout />
+    </>
+  );
 }
 
-export default App
+export default App;
