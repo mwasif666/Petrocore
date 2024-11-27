@@ -8,6 +8,8 @@ import FAQPage from "../app/components/pages/faq";
 
 import ServicesPage from "../app/components/services/services";
 import ServiceDetailPage from "../app/components/services/detail";
+
+import ElementsPage from "../app/components/elements";
 import Error404 from "../app/components/pages/error404";
 
 function AppRoutes() {
